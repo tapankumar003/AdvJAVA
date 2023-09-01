@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<!--   <bean class="com.to.Hello">
+	  <property name="message" value="Welocme to Spring"></property>
+	  <property name="code" value="123"></property>
+	  <property name="name" value="Ravi"></property>
+  </bean>
+  -->
+  
+ <!--  <bean class="com.to.Hello" id="h1">
+	  <property name="message" value="Welocme to Spring"></property>
+	  <property name="code" value="123"></property>
+	  <property name="name" value="Ravi"></property>
+  </bean>
+  <bean class="com.to.Hello" id="h2">
+	  <property name="message" value="Welocme to Application"></property>
+	  <property name="code" value="1778"></property>
+	  <property name="name" value="Rasmita"></property>
+  </bean> -->
+  
+  <bean class="com.to.Employee" id="e1">
+	  <property name="empId" value="48858"></property>
+	  <property name="empName" value="Ram"></property>
+  </bean>
+ <!--  <bean class="com.to.Employee" id="e2">
+	  <constructor-arg name="emoId" value="4555"></constructor-arg>
+	  <constructor-arg name="empName" value="Arav"></constructor-arg>
+  </bean>-->
+  <bean class="com.to.Employee" id="em">
+	  <constructor-arg name="empId" value="444"></constructor-arg>
+	  <constructor-arg name="empName" value="Raaj"></constructor-arg>
+  </bean>
+  
+</beans>

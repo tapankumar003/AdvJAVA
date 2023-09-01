@@ -1,0 +1,38 @@
+package com.to;
+
+public class Hello {
+
+	private String message;
+	private int code;
+	private String name;
+
+	
+	public Hello() {
+		super();
+	}
+
+	public int getCode() {
+		return code;
+	}
+
+	public void setCode(int code) {
+		this.code = code;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	
+}

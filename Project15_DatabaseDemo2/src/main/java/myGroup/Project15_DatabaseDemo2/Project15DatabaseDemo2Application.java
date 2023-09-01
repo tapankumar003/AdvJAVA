@@ -1,0 +1,28 @@
+package myGroup.Project15_DatabaseDemo2;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Project15DatabaseDemo2Application implements CommandLineRunner{
+
+	private Logger logger = LoggerFactory.getLogger(getClass());
+	
+	@Autowired
+	EmployeeDao dao;
+	
+	public static void main(String[] args) {
+		SpringApplication.run(Project15DatabaseDemo2Application.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		// TODO Auto-generated method stub
+		logger.info("all emp data -> {}",dao.getAllEmp());
+	}
+
+}
